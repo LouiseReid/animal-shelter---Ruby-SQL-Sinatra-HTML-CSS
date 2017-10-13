@@ -81,4 +81,15 @@ class Animal
     return result
   end
 
+  def change_status()
+    if @status == false
+      @status = true
+    elsif @status == true
+      @status = false
+    end
+    update()
+  end
+
+  
+
 end
