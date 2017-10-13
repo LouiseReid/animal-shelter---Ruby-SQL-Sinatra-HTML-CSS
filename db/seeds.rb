@@ -12,8 +12,8 @@ animal1 = Animal.new({
   'picture' => '/domesticlonghair.jpeg',
   'arrival_date' => '12/10/2017',
   'status' => true,
-  'type' => 'cat',
-  'breed' => 'domestic long hair'
+  'type' => 'Cat',
+  'breed' => 'Domestic Long-hair'
   })
 
   animal1.save()
@@ -23,8 +23,8 @@ animal2 = Animal.new({
   'picture' => '/bordercollie.jpeg',
   'arrival_date' => '1/10/2017',
   'status' => false,
-  'type' => 'dog',
-  'breed' => 'border collie'
+  'type' => 'Dog',
+  'breed' => 'Border Collie'
   })
 
   animal2.save()
@@ -34,8 +34,8 @@ animal3 = Animal.new({
   'picture' => '/mainecoon.jpeg',
   'arrival_date' => '10/10/2017',
   'status' => true,
-  'type' => 'cat',
-  'breed' => 'maine coon'
+  'type' => 'Cat',
+  'breed' => 'Maine Coon'
   })
 
   animal3.save()
@@ -45,8 +45,8 @@ animal4 = Animal.new({
   'picture' => '/germanshepherd.jpeg',
   'arrival_date' => '2/10/2017',
   'status' => false,
-  'type' => 'dog',
-  'breed' => 'german shepherd'
+  'type' => 'Dog',
+  'breed' => 'German Shepherd'
   })
 
   animal4.save()
@@ -56,8 +56,8 @@ animal5 = Animal.new({
   'picture' => '/domesticshorthair.jpeg',
   'arrival_date' => '2/10/2017',
   'status' => true,
-  'type' => 'cat',
-  'breed' => 'domestic short hair'
+  'type' => 'Cat',
+  'breed' => 'Domestic Short-hair'
   })
 
   animal5.save()
@@ -67,8 +67,8 @@ animal6 = Animal.new({
   'picture' => '/dalmatian.jpeg',
   'arrival_date' => '2/10/2017',
   'status' => false,
-  'type' => 'dog',
-  'breed' => 'dalmatian'
+  'type' => 'Dog',
+  'breed' => 'Dalmatian'
   })
 
   animal6.save()

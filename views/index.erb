@@ -17,7 +17,7 @@
   </tr>
   <% @animals.each do |animal|%>
   <tr>
-    <td><%= "img src='animal.picture'"  %> </td>
+    <td><img src="<%= animal.picture %>"> </td>
     <td></td>
     <td><%= animal.name %></td>
     <td></td>
@@ -30,5 +30,6 @@
     <td><%= animal.status %></td>
   </tr>
   <% end %>
+
 
 </table>
