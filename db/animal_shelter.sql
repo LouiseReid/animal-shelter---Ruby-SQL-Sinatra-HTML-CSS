@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS owners;
+DROP TABLE IF EXISTS animals;
+
+CREATE TABLE animals(
+  id SERIAL4 PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  picture VARCHAR(255),
+  arrival_date VARCHAR(10) NOT NULL,
+  status BOOLEAN NOT NULL,
+  type VARCHAR(255) NOT NULL,
+  breed VARCHAR(255)
+);
+
+CREATE TABLE owners(
+  id SERIAL4 PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  animal_id INT4 REFERENCES animals(id)
+);
