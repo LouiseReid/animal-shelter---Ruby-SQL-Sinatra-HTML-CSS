@@ -3,8 +3,9 @@ require_relative '../models/owner'
 
 require 'pry-byebug'
 
-Animal.delete_all()
 Owner.delete_all()
+Animal.delete_all()
+
 
 animal1 = Animal.new({
   'name' => 'Fergus',
@@ -42,3 +43,7 @@ animal3 = Animal.new({
   owner1 = Owner.new({'name' => 'Mrs Brown', 'animal_id' => animal2.id})
 
   owner1.save()
+
+
+binding.pry
+nil

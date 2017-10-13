@@ -42,11 +42,42 @@ class Animal
     SqlRunner.run(sql, values)
   end
 
-  def self.find(id)
+  def update()
+    sql = "UPDATE animals SET(name, picture, arrival_date, status, type, breed)
+    = ($1, $2, $3, $4, $5, $6) WHERE id = $7;"
+    values = [@name, @picture, @arrival_date, @status, @type, @breed, @id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.find_by_id(id)
     sql = "SELECT * FROM animals WHERE id = $1;"
     values = [id]
     animal = SqlRunner.run(sql, values)
     result = animal.map { |animal| Animal.new(animal)  }
+    return result
+  end
+
+  def self.find_by_type(type)
+    sql = "SELECT * FROM animals WHERE type = $1;"
+    values = [type]
+    animals = SqlRunner.run(sql, values)
+    result = animals.map { |animal| Animal.new(animal)  }
+    return result
+  end
+
+  def self.adopted()
+    sql = "SELECT * FROM animals WHERE status = false;"
+    values = []
+    animals = SqlRunner.run(sql, values)
+    result = animals.map { |animal| Animal.new(animal)  }
+    return result
+  end
+
+  def self.available()
+    sql = "SELECT * FROM animals WHERE status = true;"
+    values = []
+    animals = SqlRunner.run(sql, values)
+    result = animals.map { |animal| Animal.new(animal)  }
     return result
   end
 
