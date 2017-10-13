@@ -11,11 +11,16 @@ get '/' do
 end
 
 get '/adopted' do
-  @owner = Owner.animal()
+  @owner = Owner.all()
   erb(:adopted)
 end
 
 get '/available' do
   @animals = Animal.available()
   erb(:available)
+end
+
+get '/owner/new' do
+  @owner = Owner.all()
+  erb(:new_owner)
 end

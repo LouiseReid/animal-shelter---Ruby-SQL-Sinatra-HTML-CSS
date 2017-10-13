@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS adoptions;
 DROP TABLE IF EXISTS owners;
 DROP TABLE IF EXISTS animals;
 
@@ -14,6 +15,11 @@ CREATE TABLE animals(
 CREATE TABLE owners(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
-  animal_id INT4 REFERENCES animals(id),
   contact VARCHAR(11) NULL
+);
+
+CREATE TABLE adoptions(
+  id SERIAL4 PRIMARY KEY,
+  animal_id INT4 REFERENCES animals(id),
+  owner_id INT4 REFERENCES owners(id)
 );

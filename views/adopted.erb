@@ -14,10 +14,11 @@
     <th>Owner Contact Number</th>
   </tr>
   <% @owner.each do |owner|%>
+  <% @animal.each do |animal|%>
   <tr>
-    <td><img src="<%= animal.picture %>"> </td>
+    <td><img src="<%= animal_id.picture %>"> </td>
     <td></td>
-    <td><%= animal.name %></td>
+    <td><%= owner.animal_id %></td>
     <td></td>
     <td><%= owner.name %></td>
     <td></td>
