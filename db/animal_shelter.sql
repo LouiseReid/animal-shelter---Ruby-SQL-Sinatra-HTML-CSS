@@ -14,5 +14,6 @@ CREATE TABLE animals(
 CREATE TABLE owners(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
-  animal_id INT4 REFERENCES animals(id)
+  animal_id INT4 REFERENCES animals(id),
+  contact VARCHAR(11) NULL
 );

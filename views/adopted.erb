@@ -1,0 +1,31 @@
+<h1>Adopted Animals</h1>
+
+<p>All animals here have been adopted and are awaitng collection.</p>
+
+
+<table>
+  <tr>
+    <th>Picture</th>
+    <th></th>
+    <th>Name</th>
+    <th></th>
+    <th>Owner</th>
+    <th></th>
+    <th>Owner Contact Number</th>
+  </tr>
+  <% @owner.each do |owner|%>
+  <tr>
+    <td><img src="<%= animal.picture %>"> </td>
+    <td></td>
+    <td><%= animal.name %></td>
+    <td></td>
+    <td><%= owner.name %></td>
+    <td></td>
+    <td><%= owner.contact %></td>
+  </tr>
+
+  <% end %>
+
+
+
+</table>
