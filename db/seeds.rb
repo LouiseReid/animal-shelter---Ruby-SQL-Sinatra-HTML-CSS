@@ -9,7 +9,7 @@ Animal.delete_all()
 
 animal1 = Animal.new({
   'name' => 'Fergus',
-  'picture' => 'picture.jpg',
+  'picture' => '/domesticlonghair.jpeg',
   'arrival_date' => '12/10/2017',
   'status' => true,
   'type' => 'cat',
@@ -20,7 +20,7 @@ animal1 = Animal.new({
 
 animal2 = Animal.new({
   'name' => 'Gary',
-  'picture' => 'picture.jpg',
+  'picture' => '/bordercollie.jpeg',
   'arrival_date' => '1/10/2017',
   'status' => false,
   'type' => 'dog',
@@ -31,7 +31,7 @@ animal2 = Animal.new({
 
 animal3 = Animal.new({
   'name' => 'Maggie',
-  'picture' => 'picture.jpg',
+  'picture' => '/mainecoon.jpeg',
   'arrival_date' => '10/10/2017',
   'status' => true,
   'type' => 'cat',
@@ -40,9 +40,50 @@ animal3 = Animal.new({
 
   animal3.save()
 
-  owner1 = Owner.new({'name' => 'Mrs Brown', 'animal_id' => animal2.id})
+animal4 = Animal.new({
+  'name' => 'Bob',
+  'picture' => '/germanshepherd.jpeg',
+  'arrival_date' => '2/10/2017',
+  'status' => false,
+  'type' => 'dog',
+  'breed' => 'german shepherd'
+  })
+
+  animal4.save()
+
+animal5 = Animal.new({
+  'name' => 'Maisey',
+  'picture' => '/domesticshorthair.jpeg',
+  'arrival_date' => '2/10/2017',
+  'status' => true,
+  'type' => 'cat',
+  'breed' => 'domestic short hair'
+  })
+
+  animal5.save()
+
+animal6 = Animal.new({
+  'name' => 'Spot',
+  'picture' => '/dalmatian.jpeg',
+  'arrival_date' => '2/10/2017',
+  'status' => false,
+  'type' => 'dog',
+  'breed' => 'dalmatian'
+  })
+
+  animal6.save()
+
+owner1 = Owner.new({'name' => 'Mrs Brown', 'animal_id' => animal2.id})
 
   owner1.save()
+
+owner2 = Owner.new({'name' => 'Mr Cassidy', 'animal_id' => animal4.id})
+
+  owner2.save()
+
+owner3 = Owner.new({'name' => 'Mr Clark', 'animal_id' => animal6.id})
+
+  owner3.save()
 
 
 binding.pry

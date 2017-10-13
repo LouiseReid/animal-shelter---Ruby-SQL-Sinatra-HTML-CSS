@@ -90,6 +90,6 @@ class Animal
     update()
   end
 
-  
+
 
 end
