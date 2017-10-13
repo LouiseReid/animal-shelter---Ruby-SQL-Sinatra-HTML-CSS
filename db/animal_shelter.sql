@@ -5,7 +5,7 @@ CREATE TABLE animals(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
   picture VARCHAR(255),
-  arrival_date VARCHAR(10) NOT NULL,
+  arrival_date VARCHAR(255) NOT NULL,
   status BOOLEAN NOT NULL,
   type VARCHAR(255) NOT NULL,
   breed VARCHAR(255)
