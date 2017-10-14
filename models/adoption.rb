@@ -40,6 +40,13 @@ class Adoption
     SqlRunner.run(sql, values)
   end
 
+  def update()
+    sql = "UPDATE adoptions SET(animal_id, owner_id)
+    = ($1, $2) WHERE id = $3;"
+    values = [@animal_id, @owner_id, @id]
+    SqlRunner.run(sql, values)
+  end
+
   def self.find(id)
     sql = "SELECT * FROM adoptions WHERE id = $1;"
     values = [id]
