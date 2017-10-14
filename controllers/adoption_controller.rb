@@ -23,3 +23,9 @@ post '/adopted' do
   animal.update(params)
   redirect to("/adopted")
 end
+
+post '/adopted/:id/delete' do
+  adoption = Adoption.find(params['id'])
+  adoption.delete
+  redirect to "/adopted"
+end

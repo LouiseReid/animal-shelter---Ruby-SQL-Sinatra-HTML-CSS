@@ -18,15 +18,17 @@ get '/animals/:id/edit' do
   erb(:"animals/edit")
 end
 
-post '/animals/:id' do
-  @animal = Animal.find_by_id(params['id'])
+post '/animals/:id/edit' do
+  @animal = Animal.new(params['id'])
   @animal.update
   redirect to "/animals"
 end
 
-
-
-
+post '/animals/:id/delete' do
+  animal = Animal.find_by_id(params['id'])
+  animal.delete
+  redirect to "/animals"
+end
 
 
 get '/available' do

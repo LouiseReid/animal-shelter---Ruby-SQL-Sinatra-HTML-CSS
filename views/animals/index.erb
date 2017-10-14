@@ -16,6 +16,7 @@
     <th>Available to Adopt</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
   <% @animals.each do |animal|%>
   <tr>
@@ -31,8 +32,10 @@
     <td></td>
     <td><%= animal.status %></td>
     <td></td>
-    <td><p><a href="/animals/<%= animal.id %>">Show Animal</a></p></td>
+    <td><p><a href="/animals/<%= animal.id %>">Edit Details</a></p></td>
+    <td></td>
   </tr>
+
 
 
   <% end %>

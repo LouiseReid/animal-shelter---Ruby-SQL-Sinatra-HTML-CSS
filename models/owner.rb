@@ -43,11 +43,10 @@ class Owner
     sql = "SELECT * FROM owners WHERE id = $1;"
     values = [id]
     owner = SqlRunner.run(sql, values)
-    result = owner.map { |owner| Owner.new(owner)  }
+    result = Owner.new(owner.first)
     return result
   end
 
-  
 
 
 

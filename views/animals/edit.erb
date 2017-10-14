@@ -1,18 +1,19 @@
-<form action="/animals/<%= @animal.id %>" method="post">
+<form action="/animals/<%= @animal.id %>/edit" method="post">
+
+  <input type="hidden" name="picture" value="<%= @animal.picture %>">
 
   <label for="name">Name:</label>
-  <input type="text" id="name" name="name" value="<%= @animal.name %>" required> <br>
+  <input type="text" name="name" id="name" value="<%= @animal.name %>"/>
 
-  <input type="hidden" name="picture" value="<%= @animal.picture %>"><br>
 
   <label for="arrival_date">Arrival Date:</label>
-  <input type="text" id="arrival_date" name="arrival_date" value="<%= @animal.arrival_date %>" required><br>
+  <input type="text" name="arrival_date" id="arrival_date"  value="<%= @animal.arrival_date %>"/>
 
   <label for="type">Type:</label>
-  <input type="text" id="type" name="type" value="<%= @animal.type %>" required><br>
+  <input type="text" name="type" id="type" value="<%= @animal.type %>"/>
 
   <label for="breed">Breed:</label>
-  <input type="text" id="breed" name="breed" value="<%= @animal.breed %>" required><br>
+  <input type="text" name="breed" id="breed" value="<%= @animal.breed %>"/>
 
   <label for="status">Status:</label>
   <select name="status" id="status">

@@ -44,9 +44,10 @@ class Adoption
     sql = "SELECT * FROM adoptions WHERE id = $1;"
     values = [id]
     adoption = SqlRunner.run(sql, values)
-    result = adoption.map { |adopt| Adoption.new(adopt)  }
+    result = Adoption.new(adoption.first)
     return result
   end
+
 
   def animal()
     sql = "SELECT * FROM animals WHERE id = $1;"
