@@ -87,6 +87,11 @@ owner3 = Owner.new({'name' => 'Mr Clark', 'contact' => '07774009375'})
 
   owner3.save()
 
+owner4 = Owner.new({'name' => 'Alanna Smith', 'contact' => '07774009078'})
+
+  owner4.save()
+
+
 adoption1 = Adoption.new({'animal_id' => animal2.id, 'owner_id' => owner1.id})
 
   adoption1.save()

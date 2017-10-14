@@ -11,12 +11,12 @@
     </select>
   </label>
   <label>
-    Enter your details:
-    <label for="Name">Name:</label>
-    <input type="text" name="name" id="Name">
-
-   <label for="contact">Contact Details:</label>
-   <input type="text" name="contact" id="contact">
+    Select owner:
+    <select name="owner_id">
+      <% @owner.each do |owner| %>
+      <option value="<%= owner.id %>"><%= owner.name %></option>
+      <% end %>
+    </select>
 
   </label>
 

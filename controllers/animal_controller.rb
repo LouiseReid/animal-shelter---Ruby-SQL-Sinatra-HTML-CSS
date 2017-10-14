@@ -11,3 +11,9 @@ get '/available' do
   @animals = Animal.available()
   erb(:"animals/available")
 end
+
+post '/available/new' do
+  animal = Animal.new(params)
+  animal.save()
+  redirect to("/available")
+end
