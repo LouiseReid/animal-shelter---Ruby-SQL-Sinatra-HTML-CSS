@@ -24,6 +24,7 @@ post '/adopted' do
   redirect to("/adopted")
 end
 
+
 post '/adopted/:id/delete' do
   adoption = Adoption.find(params['id'])
   adoption.delete
