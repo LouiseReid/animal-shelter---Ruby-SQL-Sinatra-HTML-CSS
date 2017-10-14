@@ -1,0 +1,18 @@
+<h1>Owners</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Contact</th>
+  </tr>
+  <% @owners.each do |owner|%>
+  <tr>
+    <td><%= owner.name %></td>
+    <td></td>
+    <td><%= owner.contact %></td>
+  </tr>
+  <% end %>
+
+
+</table>
