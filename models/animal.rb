@@ -53,7 +53,7 @@ class Animal
     sql = "SELECT * FROM animals WHERE id = $1;"
     values = [id]
     animal = SqlRunner.run(sql, values)
-    result = animal.map { |animal| Animal.new(animal)  }
+    result = Animal.new(animal.first)
     return result
   end
 

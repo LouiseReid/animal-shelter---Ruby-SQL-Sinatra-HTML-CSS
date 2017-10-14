@@ -1,0 +1,24 @@
+<form action="/animals/<%= @animal.id %>" method="post">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= @animal.name %>" required> <br>
+
+  <input type="hidden" name="picture" value="<%= @animal.picture %>"><br>
+
+  <label for="arrival_date">Arrival Date:</label>
+  <input type="text" id="arrival_date" name="arrival_date" value="<%= @animal.arrival_date %>" required><br>
+
+  <label for="type">Type:</label>
+  <input type="text" id="type" name="type" value="<%= @animal.type %>" required><br>
+
+  <label for="breed">Breed:</label>
+  <input type="text" id="breed" name="breed" value="<%= @animal.breed %>" required><br>
+
+  <label for="status">Status:</label>
+  <select name="status" id="status">
+    <option value="true">True</option>
+    <option value="false">False</option></select>
+
+    <input type="submit" value="Update Animal Details">
+
+  </form>

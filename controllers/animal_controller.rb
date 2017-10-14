@@ -7,6 +7,28 @@ get '/animals' do
   erb(:"animals/index")
 end
 
+get '/animals/:id' do
+  @animal = Animal.find_by_id(params['id'])
+  erb(:"animals/edit")
+end
+
+
+get '/animals/:id/edit' do
+  @animal = Animal.find_by_id(params['id'])
+  erb(:"animals/edit")
+end
+
+post '/animals/:id' do
+  @animal = Animal.find_by_id(params['id'])
+  @animal.update
+  redirect to "/animals"
+end
+
+
+
+
+
+
 get '/available' do
   @animals = Animal.available()
   erb(:"animals/available")
