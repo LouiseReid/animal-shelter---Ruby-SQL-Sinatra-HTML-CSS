@@ -1,0 +1,24 @@
+<h1>Register new Adoption</h1>
+
+
+<form action="/adopted" method="post">
+  <label>
+  Select a animal:
+    <select name="animal_id">
+      <% @animals.each do |animal| %>
+      <option value="<%= animal.id %>"><%= animal.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <label>
+    Enter your details:
+    <label for="Name">Name:</label>
+    <input type="text" name="name" id="Name">
+
+   <label for="contact">Contact Details:</label>
+   <input type="text" name="contact" id="contact">
+
+  </label>
+
+    <input type="submit" value="Register new Adoption">
+</form>

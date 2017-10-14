@@ -23,6 +23,7 @@ class Adoption
 
   def self.all()
     sql = "SELECT * FROM adoptions;"
+    values = []
     adoption = SqlRunner.run(sql, values)
     result = adoption.map { |adopt| Adoption.new(adopt) }
   end
