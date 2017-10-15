@@ -36,10 +36,10 @@
     <td></td>
     <td><%= animal.status %></td>
     <td></td>
-    <td><p><a href="/animals/<%= animal.id %>">Edit Details</a></p></td>
+    <td><a class="btn btn--edit" href="/animals/<%= animal.id %>">Edit Details</a></td>
     <td></td>
     <td><form  action="/animals/<%= animal.id %>/delete" method="post">
-      <input type="submit" value="Remove"></td>
+      <input class="btn btn--remove" type="submit" value="Remove"></td>
   </tr>
 
   <% end %>

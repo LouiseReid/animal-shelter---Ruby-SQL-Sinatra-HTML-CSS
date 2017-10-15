@@ -33,6 +33,6 @@ post '/adopted/:id/delete' do
 end
 
 
-# animal = Animal.find_by_id(params['id'])
+# animal = Animal.find_by_id(params['animal_id'])
 # animal.change_status
 # animal.update

@@ -13,6 +13,11 @@ h1{
   margin: 5%;
 }
 
+p {
+  font-size: 25px;
+  padding-left: 30px;
+}
+
 .home ul {
   display: flex;
   flex-flow: row wrap;
@@ -72,13 +77,11 @@ h1{
 /*tables*/
 
 table {
-  display: flex;
-  flex-flow: column nowrap;
-  font-size: 20px;
-  margin: 2%;
-  line-height: 2;
+  width: 100%;
+  display: table;
   border-bottom: 1px solid #d0d0d0;
   border-top: 2px solid #d0d0d0;
+  font-size: 20px;
 }
 
 th {
@@ -108,6 +111,7 @@ td {
   border-bottom: 1px solid #d0d0d0;
 }
 
+
 /*buttons*/
 .wrapper{
   text-align: right;
@@ -124,4 +128,21 @@ td {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+}
+
+.btn--remove {
+  height: 50px;
+  background-color: #BA4444;
+  color: #2B303A;
+  align-content: center;
+  font-size: 25px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn--edit {
+  height: 50px;
+  font-size: 25px;
+  margin-top: 60px;
+  justify-content: center;
 }
