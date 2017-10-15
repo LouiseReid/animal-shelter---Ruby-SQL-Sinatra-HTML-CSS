@@ -9,8 +9,8 @@ body {
 .home h1{
   text-align: center;
   font-size: 35px;
-  text-decoration: underline;
-
+  border-bottom: 3px solid #338CC4;
+  margin: 5%;
 }
 
 .home ul {
@@ -21,10 +21,8 @@ body {
 }
 
 .home li {
-  margin: 10px;
-  flex-basis: calc(50% - 20px);
-  height: 200px;
-  width: 200px;
+  margin: 15px;
+  flex-basis: calc(50% - 60px);
   background-color: #BCE2D2;
   text-align: center;
   line-height: 200px;
@@ -37,8 +35,33 @@ body {
 
 .home li a {
   text-decoration: none;
+
 }
 
 .home li a:hover{
   font-size: 120%;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.nav a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a:hover {
+  background: #CCC;
+  font-size: 120%;
+
 }
