@@ -35,12 +35,19 @@ post '/animals/:id/edit' do
   redirect to "/animals"
 end
 
-
 post '/animals/:id/delete' do
   animal = Animal.find_by_id(params['id'])
   animal.delete
   redirect to "/animals"
 end
+
+get 'animals/find' do
+  @animals = Animals.find_by_type(params['type'])
+  erb(:"animals/type")
+end
+
+
+
 
 
 get '/available' do
