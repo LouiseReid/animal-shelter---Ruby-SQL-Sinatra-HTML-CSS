@@ -1,4 +1,44 @@
 body {
   font-family: 'Abel', sans-serif;
+  color: #338CC4;
+  background-color: #F9FFF9;
+  padding: 0px;
+  margin: 0px;
+}
 
+.home h1{
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+
+}
+
+.home ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 32px 0;
+}
+
+.home li {
+  margin: 10px;
+  flex-basis: calc(50% - 20px);
+  height: 200px;
+  width: 200px;
+  background-color: #BCE2D2;
+  text-align: center;
+  line-height: 200px;
+  font-size: 35px;
+}
+
+.home li:nth-child(2), .home li:nth-child(3) {
+  background-color: #9AA5AD;
+}
+
+.home li a {
+  text-decoration: none;
+}
+
+.home li a:hover{
+  font-size: 120%;
 }
