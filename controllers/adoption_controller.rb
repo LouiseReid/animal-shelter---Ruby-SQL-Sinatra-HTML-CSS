@@ -28,3 +28,8 @@ post '/adopted/:id/delete' do
   adoption.update
   redirect to "/adopted"
 end
+
+
+# animal = Animal.find_by_id(params['id'])
+# animal.change_status
+# animal.update

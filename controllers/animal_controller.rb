@@ -16,7 +16,7 @@ post '/animals' do
   @animal = Animal.new(params)
   @animal.save()
   redirect to ("/animals")
-end 
+end
 
 get '/animals/:id' do
   @animal = Animal.find_by_id(params['id'])
@@ -51,4 +51,9 @@ post '/available/new' do
   animal = Animal.new(params)
   animal.save()
   redirect to("/available")
+end
+
+post '/animals/:id/delete' do
+  Animal.delete(params[:id])
+  redirect to ("/animals")
 end

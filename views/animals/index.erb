@@ -17,6 +17,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
   <% @animals.each do |animal|%>
   <tr>
@@ -34,10 +35,13 @@
     <td></td>
     <td><p><a href="/animals/<%= animal.id %>">Edit Details</a></p></td>
     <td></td>
+    <td><form  action="/animals/<%= animal.id %>/delete" method="post">
+      <input type="submit" value="Remove"></td>
   </tr>
 
   <% end %>
 
-<a href="/animals/new">Add New Animal</a>
-
 </table>
+
+
+<a href="/animals/new">Add New Animal</a>
