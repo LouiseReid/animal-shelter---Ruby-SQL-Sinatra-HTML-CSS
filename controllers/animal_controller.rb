@@ -35,6 +35,7 @@ post '/animals/:id/edit' do
   redirect to "/animals"
 end
 
+
 post '/animals/:id/delete' do
   animal = Animal.find_by_id(params['id'])
   animal.delete

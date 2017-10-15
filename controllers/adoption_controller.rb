@@ -18,6 +18,9 @@ end
 post '/adopted' do
   adoption = Adoption.new(params)
   adoption.save
+  animal = Animal.find_by_id(params['animal_id'])
+  animal.status = false
+  animal.update
   redirect to("/adopted")
 end
 

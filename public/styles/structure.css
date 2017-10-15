@@ -35,11 +35,13 @@ h1{
 
 .home li a {
   text-decoration: none;
+  color: inherit;
 
 }
 
 .home li a:hover{
   font-size: 120%;
+  color: inherit;
 }
 
 .nav ul{
@@ -53,7 +55,6 @@ h1{
 
 .nav a {
   color: #333;
-  display: block;
   text-decoration: none;
   font-size: 20px;
   text-align: center;
@@ -61,7 +62,7 @@ h1{
 }
 
 .nav a:hover {
-  background: #CCC;
+  font-size: 120%;
  }
 
 .img {
