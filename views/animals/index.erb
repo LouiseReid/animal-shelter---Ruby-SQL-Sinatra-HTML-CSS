@@ -32,7 +32,7 @@
   </tr>
   <% @animals.each do |animal|%>
   <tr>
-    <td><img class= "img" src="<%= animal.picture %>"> </td>
+    <td><a href="/animals/<%= animal.id %>/info"><img class= "img" src="<%= animal.picture %>"></a> </td>
     <td></td>
     <td class="cell-text"><%= animal.name %></td>
     <td></td>

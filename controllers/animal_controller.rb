@@ -52,7 +52,10 @@ post '/animals/:id/delete' do
   redirect to "/animals"
 end
 
-
+get '/animals/:id/info' do
+  @animal = Animal.find_by_id(params['id'])
+  erb(:"animals/info")
+end
 
 
 

@@ -194,6 +194,14 @@ td {
   margin: 20px;
 }
 
+.info-box input[type=text] {
+  font-family: inherit;
+  font-size: 20px;
+  width: 30%;
+  height: 150px;
+
+}
+
 label {
   font-size: 20px;
   margin-right: 10px;
