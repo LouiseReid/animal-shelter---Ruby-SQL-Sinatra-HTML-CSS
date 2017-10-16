@@ -19,7 +19,7 @@ post '/adopted' do
   adoption = Adoption.new(params)
   adoption.save
   animal = Animal.find_by_id(params['animal_id'])
-  animal.status = false
+  animal.change_status
   animal.update
   redirect to("/adopted")
 end
@@ -27,12 +27,7 @@ end
 
 post '/adopted/:id/delete' do
   adoption = Adoption.find(params['id'])
+  adoption.animal.delete
   adoption.delete
-  adoption.update
   redirect to "/adopted"
 end
-
-
-# animal = Animal.find_by_id(params['animal_id'])
-# animal.change_status
-# animal.update

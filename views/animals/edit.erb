@@ -1,6 +1,6 @@
 <form action="/animals/<%= @animal.id %>/edit" method="post">
 
-  <input type="file" name="picture" value="<%= @animal.picture %>">
+  <input type="hidden" name="picture" value="<%= @animal.picture %>">
 
   <label for="name">Name:</label>
   <input type="text" name="name" id="name" value="<%= @animal.name %>"/>

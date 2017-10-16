@@ -10,10 +10,11 @@ class Animal
     @name = options['name']
     @picture = options['picture']
     @arrival_date = options['arrival_date']
-    @status = options['status']
+    @status = convert_to_boolean(options['status'])
     @type = options['type']
     @breed = options['breed']
   end
+
 
   def save()
     sql = "INSERT INTO animals(name, picture, arrival_date, status, type, breed)
@@ -81,12 +82,13 @@ class Animal
     return result
   end
 
+  def convert_to_boolean(status)
+    return true if status == 't' || status == true
+    return false
+  end
+
   def change_status()
-    if @status == false
-      @status = true
-    elsif @status == true
-      @status = false
-    end
+    @status = !@status
     update()
   end
 

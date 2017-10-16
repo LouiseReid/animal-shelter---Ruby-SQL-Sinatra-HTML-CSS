@@ -38,8 +38,11 @@
     <td></td>
     <td><a class="btn btn--edit" href="/animals/<%= animal.id %>">Edit Details</a></td>
     <td></td>
-    <td><form  action="/animals/<%= animal.id %>/delete" method="post">
-      <input class="btn btn--remove" type="submit" value="Remove"></td>
+    <td>
+      <form  action="/animals/<%= animal.id %>/delete" method="post">
+        <input class="btn btn--remove" type="submit" value="Remove">
+      </form>
+    </td>
   </tr>
 
   <% end %>

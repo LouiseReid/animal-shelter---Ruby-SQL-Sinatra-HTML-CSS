@@ -30,7 +30,7 @@ get '/animals/:id/edit' do
 end
 
 post '/animals/:id/edit' do
-  @animal = Animal.new(params['id'])
+  @animal = Animal.new(params)
   @animal.update
   redirect to "/animals"
 end
@@ -41,7 +41,7 @@ post '/animals/:id/delete' do
   redirect to "/animals"
 end
 
-get 'animals/find' do
+get '/animals/find' do
   @animals = Animals.find_by_type(params['type'])
   erb(:"animals/type")
 end
