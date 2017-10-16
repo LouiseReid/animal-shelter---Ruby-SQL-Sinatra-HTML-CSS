@@ -17,14 +17,14 @@
   <tr>
     <td><img class="img" src="<%= adoption.animal.picture %>"> </td>
     <td></td>
-    <td><%= adoption.animal.name %></td>
+    <td class="cell-text"><%= adoption.animal.name %></td>
     <td></td>
-    <td><%= adoption.owner.name %></td>
+    <td class="cell-text"><%= adoption.owner.name %></td>
     <td></td>
-    <td><%= adoption.owner.contact %></td>
+    <td class="cell-text"><%= adoption.owner.contact %></td>
     <td></td>
-    <td><form action="/adopted/<%= adoption.id %>/delete" method="POST">
-        <input type="submit" value="Confirm as Collected" />
+    <td class="cell-text"><form action="/adopted/<%= adoption.id %>/delete" method="POST">
+        <input class="btn btn--confirm" type="submit" value="Confirm as Collected" />
       </form></td>
     <td></td>
 </td>

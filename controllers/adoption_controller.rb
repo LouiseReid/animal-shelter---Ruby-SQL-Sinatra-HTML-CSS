@@ -28,6 +28,7 @@ end
 post '/adopted/:id/delete' do
   adoption = Adoption.find(params['id'])
   adoption.animal.delete
+  adoption.owner.delete
   adoption.delete
   redirect to "/adopted"
 end

@@ -26,20 +26,20 @@
   <tr>
     <td><img class= "img" src="<%= animal.picture %>"> </td>
     <td></td>
-    <td><%= animal.name %></td>
+    <td class="cell-text"><%= animal.name %></td>
     <td></td>
-    <td><%= animal.type %></td>
+    <td class="cell-text"><%= animal.type %></td>
     <td></td>
-    <td><%= animal.breed %></td>
+    <td class="cell-text"><%= animal.breed %></td>
     <td></td>
-    <td><%= animal.arrival_date %></td>
+    <td class="cell-text"><%= animal.arrival_date %></td>
     <td></td>
-    <td><%= animal.status %></td>
+    <td class="cell-text"><%= animal.status %></td>
     <td></td>
-    <td><a class="btn btn--edit" href="/animals/<%= animal.id %>">Edit Details</a></td>
+    <td class="cell-text"><a class="btn btn--edit" href="/animals/<%= animal.id %>">Edit Details</a></td>
     <td></td>
     <td>
-      <form  action="/animals/<%= animal.id %>/delete" method="post">
+      <form class="cell-text" action="/animals/<%= animal.id %>/delete" method="post">
         <input class="btn btn--remove" type="submit" value="Remove">
       </form>
     </td>

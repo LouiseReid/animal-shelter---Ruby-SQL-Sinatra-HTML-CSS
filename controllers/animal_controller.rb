@@ -62,6 +62,6 @@ post '/available/new' do
 end
 
 post '/animals/:id/delete' do
-  Animal.delete(params[:id])
+  Animal.delete(params['id'])
   redirect to ("/animals")
 end
