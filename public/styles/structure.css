@@ -74,6 +74,7 @@ p {
   width: 250px;
 }
 
+
 /*tables*/
 
 table {
@@ -150,6 +151,13 @@ td {
   font-size: 25px;
 }
 
+.btn--add {
+  font-size: 20px;
+  margin: 20px;
+  background-color: #23BA46;
+  color: #FFF;
+}
+
 /*forms*/
 
 .form {
@@ -160,9 +168,8 @@ td {
 .field-group {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 20px;
 }
-
 
 label {
   font-size: 20px;
