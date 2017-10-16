@@ -1,8 +1,9 @@
+
+<form action="/animals/find" method="GET">
+  <label for="search">Search:</label>
+  <input type="search" name="type" id="search">
+</form>
 <% @animals.each do |animal| %>
-
-<input type="search" name="type" id="type">
-
-
 Name:<%= animal.name %>
 Type: <%= animal.type %>
 Breed: <%= animal.breed %>

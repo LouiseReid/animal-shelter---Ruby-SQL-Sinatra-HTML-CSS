@@ -18,11 +18,22 @@ post '/animals' do
   redirect to ("/animals")
 end
 
+
+get '/animals/find' do
+  @animals = Animal.find_by_type(params['type'])
+  erb(:"animals/type")
+end
+
+post '/animals/find' do
+  @animals = Animals.find_by_type(params['type'])
+  erb(:"animals/type")
+end
+
+
 get '/animals/:id' do
   @animal = Animal.find_by_id(params['id'])
   erb(:"animals/edit")
 end
-
 
 get '/animals/:id/edit' do
   @animal = Animal.find_by_id(params['id'])
@@ -39,11 +50,6 @@ post '/animals/:id/delete' do
   animal = Animal.find_by_id(params['id'])
   animal.delete
   redirect to "/animals"
-end
-
-get '/animals/find' do
-  @animals = Animals.find_by_type(params['type'])
-  erb(:"animals/type")
 end
 
 
