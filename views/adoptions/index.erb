@@ -27,6 +27,10 @@
         <input class="btn btn--confirm" type="submit" value="Confirm as Collected" />
       </form></td>
     <td></td>
+      <td class="cell-text"><form action="/adopted/<%= adoption.id %>/cancel" method="POST">
+        <input class="btn btn--remove" type="submit" value="Cancel Adoption" />
+      </form></td>
+    <td></td>
 </td>
   </tr>
 

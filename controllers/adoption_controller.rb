@@ -32,3 +32,12 @@ post '/adopted/:id/delete' do
   adoption.delete
   redirect to "/adopted"
 end
+
+post '/adopted/:id/cancel' do
+  adoption = Adoption.find(params['id'])
+  adoption.animal.change_status
+  adoption.animal.update
+  adoption.owner.delete
+  adoption.delete
+  redirect to "/adopted"
+end
