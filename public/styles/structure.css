@@ -18,6 +18,23 @@ p {
   padding-left: 30px;
 }
 
+.search {
+  text-align: right;
+  margin: 30px;
+}
+
+.search-label {
+  font-size: 30px;
+}
+
+.search-input {
+  font-size: 30px;
+}
+
+.search--results {
+  margin-top: 50px;
+}
+
 .home ul {
   display: flex;
   flex-flow: row wrap;

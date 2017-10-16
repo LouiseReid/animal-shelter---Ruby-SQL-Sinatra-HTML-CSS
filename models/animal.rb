@@ -59,8 +59,8 @@ class Animal
   end
 
   def self.find_by_type(type)
-    sql = "SELECT * FROM animals WHERE type = $1;"
-    values = [type]
+    sql = "SELECT * FROM animals WHERE LOWER(type) = $1;"
+    values = [type.downcase]
     animals = SqlRunner.run(sql, values)
     result = animals.map { |animal| Animal.new(animal)  }
     return result

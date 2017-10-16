@@ -1,12 +1,23 @@
+<p>Search Results:</p>
 
-<form action="/animals/find" method="GET">
-  <label for="search">Search:</label>
-  <input type="search" name="type" id="search">
-</form>
+
+<div class="search--results">
 <% @animals.each do |animal| %>
-Name:<%= animal.name %>
-Type: <%= animal.type %>
-Breed: <%= animal.breed %>
-arrival_date Date: <%= animal.arrival_date %>
-Adoption Status: <%= animal.status %>
+
+
+<table>
+<tr>
+  <td><img class= "img" src="<%= animal.picture %>"> </td>
+  <td></td>
+  <td><%= animal.name %></td>
+  <td></td>
+  <td><%= animal.breed %></td>
+  <td></td>
+  <td><%= animal.arrival_date %></td>
+  <td></td>
+  <td><%= animal.status %></td>
+</tr>
+</table>
+
 <%end%>
+</div>
