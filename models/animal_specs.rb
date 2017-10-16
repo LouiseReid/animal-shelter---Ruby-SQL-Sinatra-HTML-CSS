@@ -26,6 +26,7 @@ class AnimalTest < MiniTest::Test
     assert(true, @animal.status)
   end
 
+# comment out update in function to pass test
   def test_change_status()
     assert_equal(false, @animal.change_status)
   end
