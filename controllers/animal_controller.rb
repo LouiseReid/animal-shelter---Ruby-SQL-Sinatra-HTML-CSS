@@ -13,7 +13,7 @@ get '/animals/new' do
 end
 
 post '/animals' do
-  @animal = Animal.new(params)
+  @animal = Animal.new(params) 
   @animal.save()
   redirect to ("/animals")
 end
