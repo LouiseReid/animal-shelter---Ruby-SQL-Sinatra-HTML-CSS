@@ -158,6 +158,10 @@ td {
   color: #FFF;
 }
 
+.btn--adoption {
+  font-size: 20px;
+}
+
 /*forms*/
 
 .form {
@@ -173,16 +177,19 @@ td {
 
 label {
   font-size: 20px;
+  margin-right: 10px;
 }
 
 input[type=text] {
   font-family: inherit;
   font-size: 20px;
   width: 30%;
+  margin-right: 40px;
 }
 
 select {
   font-family: inherit;
   font-size: 20px;
   width: 20%;
+  margin-right: 40px;
 }
