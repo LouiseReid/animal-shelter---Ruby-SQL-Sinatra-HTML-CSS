@@ -16,7 +16,8 @@ CREATE TABLE animals(
 CREATE TABLE owners(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
-  contact VARCHAR(11) NOT NULL
+  contact VARCHAR(11) NOT NULL,
+  cleared BOOLEAN NOT NULL
 );
 
 CREATE TABLE adoptions(

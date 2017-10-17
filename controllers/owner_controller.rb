@@ -12,3 +12,8 @@ post '/owners' do
   owner.save
   redirect to("/adopted/new")
 end
+
+get '/blacklist' do
+  @animals = Animal.available()
+  erb(:"owners/blacklist")
+end
