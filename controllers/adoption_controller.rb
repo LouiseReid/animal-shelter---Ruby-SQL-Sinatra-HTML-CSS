@@ -40,5 +40,5 @@ post '/adopted/:id/cancel' do
   adoption.owner.change_status
   adoption.owner.update
   adoption.delete
-  redirect to "/blacklist"
+  redirect to "/adopted"
 end
