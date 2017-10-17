@@ -13,7 +13,13 @@ get '/animals/new' do
 end
 
 post '/animals' do
-  @animal = Animal.new(params) 
+  @animal = Animal.new(params)
+
+  # @new_dog = params[:file][:"new_dog.jpeg"]
+  # file = params[:file][:tempfile]
+  # File.open("../../new_animal#{@new_dog}", 'wb') do |f|
+  #   f.write(file.read)
+  # end
   @animal.save()
   redirect to ("/animals")
 end
