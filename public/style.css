@@ -18,6 +18,18 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  float: right;
+  margin-right: 30px;
+  font-size: 25px;
+  color: inherit;
+}
+
+h3 a {
+  text-decoration: none;
+
+}
+
 p {
   font-size: 25px;
   padding-left: 30px;

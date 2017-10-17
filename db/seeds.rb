@@ -93,19 +93,19 @@ animal6 = Animal.new({
 
   animal6.save()
 
-owner1 = Owner.new({'name' => 'Mrs Brown', 'contact' => '07773004567', 'prefered_type' => 'Dog'})
+owner1 = Owner.new({'name' => 'Mrs Brown', 'contact' => '07773004567'})
 
   owner1.save()
 
-owner2 = Owner.new({'name' => 'Mr Cassidy', 'contact' => '07780001234', 'prefered_type' => 'Dog'})
+owner2 = Owner.new({'name' => 'Mr Cassidy', 'contact' => '07780001234'})
 
   owner2.save()
 
-owner3 = Owner.new({'name' => 'Mr Clark', 'contact' => '07774009375', 'prefered_type' => 'Dog'})
+owner3 = Owner.new({'name' => 'Mr Clark', 'contact' => '07774009375'})
 
   owner3.save()
 
-owner4 = Owner.new({'name' => 'Alanna Smith', 'contact' => '07774009078', 'prefered_type' => 'Cat'})
+owner4 = Owner.new({'name' => 'Alanna Smith', 'contact' => '07774009078'})
 
   owner4.save()
 
