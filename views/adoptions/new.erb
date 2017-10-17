@@ -1,10 +1,8 @@
 <h1>Register new Adoption</h1>
 
-<section class="blacklist">
-  <p>Check this list of blacklisted owners before processing a new adoption</p>
-<a href="/blacklist">BLACKLISTED OWNERS</a>
-</section>
+<div class="registration">
 
+<section class="reg-chld-1">
 <p>Register owner:</p>
 <div class="form">
 <form action="/owners" method="POST">
@@ -24,9 +22,20 @@
   </div>
 </div>
   <input class="btn btn--adoption" type="submit" value="Add Owner">
-
 </form>
+</section>
+
+<section class="blacklist reg-chld-2">
+  <p>Check this list of blacklisted owners before processing a new adoption</p>
+<div class="black-link">
+<a class="blacklist-link" href="/blacklist">BLACKLISTED OWNERS</a>
 </div>
+</section>
+
+</div>
+
+
+<div class="allocation">
 
 <p>Allocate animal to new owner:</p>
 
@@ -52,4 +61,5 @@
 
     <input class="btn btn--adoption" type="submit" value="Register new Adoption">
 </form>
+</div>
 </div>

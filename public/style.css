@@ -111,8 +111,42 @@ p {
 
 .blacklist {
   display: inline-block;
+  flex-direction: row;
 }
 
+.black-link {
+  text-align: center;
+}
+
+a.blacklist-link  {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+
+.registration {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 100px;
+
+}
+
+.reg-chld-1 {
+  width: 50%;
+  margin-right: 200px;
+
+}
+
+.reg-chld-2 {
+  width: 25%;
+  border: 5px black solid;
+  height: 200px;
+}
+
+.allocation {
+  margin-left: 30px;
+}
 
 /*tables*/
 
@@ -220,8 +254,9 @@ td {
   font-size: 20px;
   width: 30%;
   height: 150px;
-
 }
+
+
 
 label {
   font-size: 20px;
