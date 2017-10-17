@@ -14,8 +14,8 @@
 <div class="field-group">
   <label for="cleared">Has owner passed security clearance: </label>
   <select name="cleared" id="cleared">
-    <option value="true">True</option>
-    <option value="false">False</option></select>
+    <option value="t">True</option>
+    <option value="f">False</option></select>
   </div>
 </div>
   <input class="btn btn--adoption" type="submit" value="Add Owner">
@@ -50,16 +50,6 @@
 </div>
 
 <section>
-  <% @owners.each do |owner|%>
-
-
-  <table>
-  <tr>
-    <td><%= owner.name %></td>
-    <td></td>
-    <td><%= owner.contact %></td>
-  </tr>
-  </table>
-
-  <% end %>
+  <p>Check this list of blacklisted owners before processing a new adoption</p>
+  <h3><a href="/blacklist">BLACKLISTED OWNERS</a></h3>
 </section>
