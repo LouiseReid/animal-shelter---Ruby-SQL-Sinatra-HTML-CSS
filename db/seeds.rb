@@ -93,6 +93,19 @@ animal6 = Animal.new({
 
   animal6.save()
 
+  animal7 = Animal.new({
+    'name' => 'Tony',
+    'picture' => '/tiger.jpeg',
+    'arrival_date' => '13/10/2017',
+    'status' => false,
+    'type' => 'Tiger',
+    'breed' => 'Bengal',
+    'info' => 'Tony was found roaming the Campsies and is awaiting transfer to Blair
+    Drummond Safari Park.  Doesn\'t like Whiskas, prefers Felix'
+  })
+
+  animal7.save()
+
 owner1 = Owner.new({'name' => 'Mrs Brown', 'contact' => '07773004567', 'cleared' => true})
 
   owner1.save()

@@ -109,6 +109,10 @@ p {
   width: 250px;
 }
 
+.blacklist {
+  display: inline-block;
+}
+
 
 /*tables*/
 
