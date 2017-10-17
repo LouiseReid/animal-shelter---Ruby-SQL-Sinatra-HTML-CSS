@@ -14,6 +14,6 @@ post '/owners' do
 end
 
 get '/blacklist' do
-  @animals = Animal.available()
+  @owners = Owner.not_cleared()
   erb(:"owners/blacklist")
 end

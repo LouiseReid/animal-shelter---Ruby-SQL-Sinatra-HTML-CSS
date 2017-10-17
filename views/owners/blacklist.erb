@@ -1,1 +1,14 @@
 <p>all owners in here have been blacklisted</p>
+
+<% @owners.each do |owner|%>
+
+
+<table>
+<tr>
+  <td><%= owner.name %></td>
+  <td></td>
+  <td><%= owner.contact %></td>
+</tr>
+</table>
+
+<% end %>
