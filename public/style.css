@@ -247,11 +247,13 @@ td {
   margin: 20px;
 }
 
-.info-box input[type=text] {
+.info-box textarea {
   font-family: inherit;
   font-size: 20px;
   width: 30%;
   height: 150px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 
