@@ -5,41 +5,37 @@
 
 <div class="form">
 
-<form action="/animals" method="post" enctype='multipart/form-data'>
-  <div class="field-group">
-  <label for="picture">Picture:</label>
-  <input type="file" for="picture" name="picture" id="picture">
-  </div>
-  <div class="field-group">
-  <label for="name">Name:</label>
-  <input type="text" name="name" id="name" required>
-  </div>
-  <div class="field-group">
-  <label for="arrival_date">Arrival Date:</label>
-  <input type="text" name="arrival_date" id="arrival_date" required>
-  </div>
-  <div class="field-group">
-  <label for="type">Type:</label>
-  <input type="text" name="type" id="type" required>
-  </div>
-  <div class="field-group">
-  <label for="breed">Breed:</label>
-  <input type="text" name="breed" id="breed">
-  </div>
-  <div class="field-group">
-  <label for="status">Ready for Adoption:</label>
-  <select name="status" id="status">
-    <option value="t">True</option>
-    <option value="f">False</option></select>
-  </div>
-  <!-- <div class="field-group info-box">
-  <label for="info">Extra Info:</label>
-  <input type="text" name="info" id="info">
-  </div> -->
-  <div class="field-group info-box">
-  <label for="info">Extra Info:</label>
-  <textarea wrap="hard" cols="20" name="info" id="info">Write stuff</textarea>
-  </div>
-  <input class="btn btn--add" type="submit" value="Add new animal"> <br>
+  <form action="/animals" method="post" enctype='multipart/form-data'>
+    <div class="field-group">
+      <label for="picture">Picture:</label>
+      <input type="file" for="picture" name="picture" id="picture">
+    </div>
+    <div class="field-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="field-group">
+      <label for="arrival_date">Arrival Date:</label>
+      <input type="text" name="arrival_date" id="arrival_date" required>
+    </div>
+    <div class="field-group">
+      <label for="type">Type:</label>
+      <input type="text" name="type" id="type" required>
+    </div>
+    <div class="field-group">
+      <label for="breed">Breed:</label>
+      <input type="text" name="breed" id="breed">
+    </div>
+    <div class="field-group">
+      <label for="status">Ready for Adoption:</label>
+      <select name="status" id="status">
+        <option value="t">True</option>
+        <option value="f">False</option></select>
+      </div>
+      <div class="field-group info-box">
+        <label for="info">Extra Info:</label>
+        <textarea wrap="hard" cols="20" name="info" id="info"></textarea>
+      </div>
+      <input class="btn btn--add" type="submit" value="Add new animal"> <br>
 
-</form>
+    </form>

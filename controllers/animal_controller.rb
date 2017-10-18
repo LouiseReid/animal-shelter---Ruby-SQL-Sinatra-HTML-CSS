@@ -15,11 +15,14 @@ end
 post '/animals' do
   @animal = Animal.new(params)
 
-  @new_dog = params[:file][:"new_dog.jpeg"]
-  file = params[:file][:tempfile]
-  File.open("../../new_animal#{@new_dog}", 'wb') do |f|
+  filename = params[:picture][:filename]
+  file = params[:picture][:tempfile]
+
+  File.open("./public/#{filename}", 'wb') do |f|
     f.write(file.read)
   end
+
+  @animal.picture = filename
   @animal.save()
   redirect to ("/animals")
 end

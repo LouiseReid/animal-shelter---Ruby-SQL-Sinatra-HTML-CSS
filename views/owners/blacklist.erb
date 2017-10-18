@@ -1,17 +1,17 @@
 <p>All owners in here have been blacklisted and should not be registered
-for adoptions:</p>
+  for adoptions:</p>
 
-<% @owners.each do |owner|%>
+    <% @owners.each do |owner|%>
 
 
-<table>
-<tr>
-  <td><%= owner.name %></td>
-  <td></td>
-  <td><%= owner.contact %></td>
-</tr>
-</table>
+    <table>
+      <tr>
+        <td><%= owner.name %></td>
+        <td></td>
+        <td><%= owner.contact %></td>
+      </tr>
+    </table>
 
-<% end %>
+    <% end %>
 
-<h3><a href="/adopted/new">BACK</a></h3>
+    <h3><a href="/adopted/new">BACK</a></h3>
