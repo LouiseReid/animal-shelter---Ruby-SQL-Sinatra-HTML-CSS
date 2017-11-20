@@ -10,6 +10,8 @@ A list of all their animals and their admission date
 Mark an animal as being adoptable/not adoptable
 Assign an animal to a new owner
 List all the owners and their adopted animals
+
+
 Possible Extensions:
 
 CRUD actions for animals/owners
