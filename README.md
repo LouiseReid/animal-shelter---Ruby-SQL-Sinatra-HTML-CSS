@@ -18,3 +18,10 @@ CRUD actions for animals/owners
 Have separate pages for animals ready for adoption and ones still in training/vet care
 Search for animals by breed/type
 Any other ideas you might come up with
+
+
+![Home Screen](https://github.com/LouiseReid/animal-shelter---Ruby-SQL-Sinatra-HTML-CSS/blob/master/Home%20Screen.jpeg)
+![All Animals](https://github.com/LouiseReid/animal-shelter---Ruby-SQL-Sinatra-HTML-CSS/blob/master/All%20Animals.jpeg)
+![Available](https://github.com/LouiseReid/animal-shelter---Ruby-SQL-Sinatra-HTML-CSS/blob/master/Available.jpeg)
+![Adopted](https://github.com/LouiseReid/animal-shelter---Ruby-SQL-Sinatra-HTML-CSS/blob/master/Adopted.jpeg)
+![Register](https://github.com/LouiseReid/animal-shelter---Ruby-SQL-Sinatra-HTML-CSS/blob/master/Register.jpeg)
